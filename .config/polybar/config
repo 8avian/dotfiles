@@ -17,7 +17,7 @@ background = ${colors.base}
 foreground = ${colors.white}
 
 border-size = 1
-border-color = ${colors.grey}
+border-color = ${colors.white}
 
 underline-size = 4
 underline-color = ${colors.white}
