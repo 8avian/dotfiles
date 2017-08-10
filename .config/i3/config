@@ -157,7 +157,8 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod+d exec rofi -show drun -modi drun -font "Airborne 10" -width 30 -padding 35 -disable-history -kb-row-select "Tab" -kb-row-tab ""
 new_window 1pixel
-exec --no-startup-id feh --bg-scale /usr/share/backgrounds/gnome/Sandstone.jpg
+#exec --no-startup-id feh --bg-scale /usr/share/backgrounds/gnome/Sandstone.jpg
+exec --no-startup-id xsetroot -solid "#020202"
 exec_always --no-startup-id bash $HOME/.config/polybar/launch.sh
-#exec --no-startup-id compton -b
+exec --no-startup-id compton -b
 exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
