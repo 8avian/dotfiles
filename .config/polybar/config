@@ -1,9 +1,9 @@
 [colors]
 base = #373B3C
 grey = #8D9194
-white = #D8DAD9
+white = #FFFFFF
 black = #202425
-red = #AE3638
+red = #EB263A
 
 [bar/bottom]
 width = 100%
@@ -17,7 +17,7 @@ background = ${colors.base}
 foreground = ${colors.white}
 
 border-size = 1
-border-color = ${colors.grey}
+border-color = ${colors.white}
 
 underline-size = 4
 underline-color = ${colors.white}
