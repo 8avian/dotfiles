@@ -1,6 +1,6 @@
 Xft.dpi:                        96
 URxvt*termName:                 rxvt-256color
-URxvt*font:                     xft:Menlo:pixelsize=14,xft:Inconsolata\ for\ Powerline:pixelsize=14
+URxvt*font:                     xft:Menlo\ for\ Powerline:pixelsize=14
 URxvt.depth:                    32
 URxvt*lineSpace:                1
 URxvt.letterSpace:              -1
@@ -19,9 +19,9 @@ URxvt.shading:                  20
 
 ! Colors
 *background:   #373B3C
-*foreground:   #D8DAD9
-*cursorColor:  #AE3638
-*pointerColor: #AE3638
+*foreground:   #eff0eb
+*cursorColor:  #9aedfe
+*pointerColor: #9aedfe
 
 *color0:      #33303b
 *color8:      #4f4b58
