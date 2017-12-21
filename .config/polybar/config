@@ -34,8 +34,8 @@ font-1 = FontAwesome:size=13;3
 font-2 = siji:pixelsize=10;0
 
 modules-left = i3 xwindow
-modules-center = 
-modules-right = battery wireless-network wired-network date powermenu
+modules-center = mpd
+modules-right = battery wireless-network wired-network volume date powermenu
 
 ;tray-position = right
 ;tray-padding = 2
@@ -213,21 +213,23 @@ animation-packetloss-1-foreground = #000000
 ; Framerate in milliseconds
 animation-packetloss-framerate = 500
 
-;[module/volume]
-;type = internal/volume
-;
-;format-volume = <ramp-volume>  <label-volume>
-;format-muted = <label-muted>
-;label-volume = %percentage%
-;label-muted =   muted
-;label-muted-foreground = #aaa
-;format-volume-padding = 3
-;format-muted-padding = 3
-;
-;ramp-volume-0 = 
-;ramp-volume-1 = 
-;ramp-volume-2 = 
-;ramp-headphones-0 = 
+[module/volume]
+type = internal/volume
+
+master-mixer = PCM
+
+format-volume = <ramp-volume>
+format-muted = <label-muted>
+label-volume = %percentage%
+label-muted =  muted
+label-muted-foreground = ${colors.grey}
+format-volume-padding = 3
+format-muted-padding = 3
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-headphones-0 = 
 
 [module/powermenu]
 type = custom/menu
@@ -256,40 +258,40 @@ menu-2-0 = power off?
 menu-2-0-exec = systemctl poweroff
 menu-2-0-padding = 3
 
-;[module/mpd]
-;type = internal/mpd
-;
-;host = 127.0.0.1
-;port = 6600
-;password = 
-;
-;; Seconds to sleep between progressbar/song timer sync
-;; Default: 1
-;interval = 2
-;
-;; Available tags:
-;;   <label-song> (default)
-;;   <label-time>
-;;   <bar-progress>
-;;   <toggle> - gets replaced with <icon-(pause|play)>
-;;   <toggle-stop> - gets replaced with <icon-(stop|play)>
-;;   <icon-random>
-;;   <icon-repeat>
-;;   <icon-repeatone>
-;;   <icon-prev>
-;;   <icon-stop>
-;;   <icon-play>
-;;   <icon-pause>
-;;   <icon-next>
-;;   <icon-seekb>
-;;   <icon-seekf>
-;format-online =    <label-song>
-;
-;; Available tokens:
-;;   %artist%
-;;   %album%
-;;   %date%
-;;   %title%
-;; Default: %artist% - %title%
-;label-song = %title%
-;format-online-padding = 3
+[module/mpd]
+type = internal/mpd
+
+host = 127.0.0.1
+port = 6600
+password = 
+
+; Seconds to sleep between progressbar/song timer sync
+; Default: 1
+interval = 2
+
+; Available tags:
+;   <label-song> (default)
+;   <label-time>
+;   <bar-progress>
+;   <toggle> - gets replaced with <icon-(pause|play)>
+;   <toggle-stop> - gets replaced with <icon-(stop|play)>
+;   <icon-random>
+;   <icon-repeat>
+;   <icon-repeatone>
+;   <icon-prev>
+;   <icon-stop>
+;   <icon-play>
+;   <icon-pause>
+;   <icon-next>
+;   <icon-seekb>
+;   <icon-seekf>
+format-online = <label-song>
+
+; Available tokens:
+;   %artist%
+;   %album%
+;   %date%
+;   %title%
+; Default: %artist% - %title%
+label-song = %title%
+format-online-padding = 3
