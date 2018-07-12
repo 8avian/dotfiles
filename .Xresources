@@ -1,6 +1,9 @@
 Xft.dpi:                        96
 URxvt*termName:                 rxvt-256color
-URxvt*font:                     xft:Menlo\ for\ Powerline:pixelsize=14
+! URxvt*font:                     xft:Menlo\ for\ Powerline:size=11
+URxvt*font:                     xft:DejaVu\ Sans\ Mono\ for\ Powerline:size=11
+! URxvt*font:                     xft:Roboto\ Mono\ for\ Powerline:size=13
+! URxvt*font:                     xft:Overpass\ Mono:size=11
 URxvt.depth:                    32
 URxvt*lineSpace:                1
 URxvt.letterSpace:              -1
@@ -44,8 +47,8 @@ URxvt.shading:                  20
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: argb:d8373b3c, #ffffff, #eb263a
-rofi.color-normal: argb:00373b3c, #ffffff, argb:00373b3c, #ffffff, #202425
-rofi.color-active: argb:00373b3c, #31a85b, argb:00373b3c, #ffffff, #31a85b
-rofi.color-urgent: argb:00373b3c, #eb263a, argb:00373b3c, #ffffff, #eb263a
+rofi.color-window: argb:ff373b3c, #ffffff, #eb263a
+rofi.color-normal: argb:ff373b3c, #ffffff, argb:ff373b3c, #ffffff, #202425
+rofi.color-active: argb:ff373b3c, #31a85b, argb:ff373b3c, #ffffff, #31a85b
+rofi.color-urgent: argb:ff373b3c, #eb263a, argb:ff373b3c, #ffffff, #eb263a
 rofi.separator-style: solid
