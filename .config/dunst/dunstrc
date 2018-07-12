@@ -1,5 +1,5 @@
 [global]
-    font = "Noto Sans 10"
+    font = "Roboto Condensed 11"
     allow_markup = yes
     format = "<b>%s</b>\n%b"
     sort = yes
@@ -26,7 +26,7 @@
     #icon_folders = /usr/share/icons/elementary/actions/16/
 
 [frame]
-    width = 1
+    width = 0
     color = "#D8DAD9"
 
 [shortcuts]
