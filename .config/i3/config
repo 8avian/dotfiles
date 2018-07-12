@@ -165,9 +165,13 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
 
-bindsym $mod+d exec rofi -show drun -modi drun -font "Airborne 10" -width 30 -padding 35 -disable-history -kb-row-select "Tab" -kb-row-tab ""
-new_window 1pixel
+bindsym $mod+d exec rofi -show drun -modi drun -font "RobotoCondensed Bold 18" -width 30 -padding 35 -bw 0 -disable-history -kb-row-select "Tab" -kb-row-tab ""
+# custom keybinding to lockscreen, use --lock dim or --lock blur below for different backgrounds
+bindsym $mod+Shift+x exec slock
+new_window pixel 0
+hide_edge_borders both
 #exec --no-startup-id feh --bg-scale $HOME/Pictures/prostaff_rf97_fr_fn.jpg
+exec --no-startup-id betterlockscreen -u /usr/share/backgrounds/gnome/Godafoss_Iceland.jpg
 exec --no-startup-id feh --bg-scale /usr/share/backgrounds/gnome/Godafoss_Iceland.jpg
 exec --no-startup-id hsetroot -solid "#303032"
 exec_always --no-startup-id bash $HOME/.config/polybar/launch.sh
