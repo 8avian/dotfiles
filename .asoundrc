@@ -3,3 +3,9 @@ pcm.!default{
  card v15
  device 0
 }
+
+#pcm.!default{
+# type hw
+# card PCH
+# device 0
+#}
