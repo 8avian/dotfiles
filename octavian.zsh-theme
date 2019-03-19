@@ -1,5 +1,5 @@
 if [ $UID -eq 0 ]; then PCHAR="%%"; else PCHAR="#"; fi
-PROMPT='$fg[white]%n@%m:%d $PCHAR '
+PROMPT='$fg[white]%n@%m:%(!.%1~.%~) $PCHAR '
 RPROMPT='$(git_prompt_info)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[red]%}"
