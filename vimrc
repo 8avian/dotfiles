@@ -4,12 +4,13 @@
 
 " BASIC SETUP:
 
-" enter the current millenium
+" Disable compatibility with vanilla vi
 set nocompatible
 
-" enable syntax and plugins (for netrw)
+" Enable syntax and plugins (for netrw)
 syntax enable
 filetype plugin on
+
 
 " FINDING FILES:
 
@@ -28,6 +29,18 @@ set wildmenu
 " - :b lets you autocomplete any open buffer
 
 
+" TAG JUMPING:
+
+" Create the `tags` file (may need to install ctags first)
+command! MakeTags !ctags -R .
+
+" NOW WE CAN:
+" - Use ^] to jump to tag under cursor
+" - Use g^] for ambiguous tags
+" - Use ^t to jump back up the tag stack
+
+" THINGS TO CONSIDER:
+" - This doesn't help if you want a visual list of tags
 
 
 
