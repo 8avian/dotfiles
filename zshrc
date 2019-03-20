@@ -95,4 +95,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="ls -G"
-#alias -g ssh='f() { ssh -t $1 "zsh -l" };f'
+alias ctags=/usr/local/bin/ctags
