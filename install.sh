@@ -9,6 +9,7 @@ ln -s ${BASEDIR}/vimrc ~/.vimrc
 ln -s ${BASEDIR}/zshrc ~/.zshrc
 
 # oh-my-zsh theme
+ln -s ${BASEDIR}/octavian.zsh ~/.oh-my-zsh/custom/
 ln -s ${BASEDIR}/octavian.zsh-theme ~/.oh-my-zsh/custom/themes/
 
 # tmux
