@@ -16,4 +16,4 @@ ln -s ${BASEDIR}/octavian.zsh-theme ~/.oh-my-zsh/custom/themes/
 ln -s ${BASEDIR}/tmux.conf ~/.tmux.conf
 
 # git
-# ln -s ${BASEDIR}/gitconfig ~/.gitconfig
+ln -s ${BASEDIR}/gitconfig ~/.gitconfig
