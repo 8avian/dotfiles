@@ -3,7 +3,7 @@
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # vim
-ln -s ${BASEDIR}/vimrc ~/.vimrc
+unlink ~/.vimrc
 
 # git
-ln -s ${BASEDIR}/gitconfig ~/.gitconfig
+unlink ~/.gitconfig
