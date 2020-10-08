@@ -58,4 +58,4 @@ set cursorline
 hi cursorline cterm=none term=none
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
-highlight CursorLine guibg=#c1d6c6 ctermbg=78
+highlight CursorLine guibg=#c1d6c6 ctermbg=240
