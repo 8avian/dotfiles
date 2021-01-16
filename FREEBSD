@@ -1,0 +1,39 @@
+# portmaster -ty --clean-distfiles and "make" errors
+https://lists.freebsd.org/pipermail/freebsd-ports/2016-May/103220.html
+But I would do a "radical" solution:
+
+rm -rf /usr/ports*
+
+portsnap fetch extract
+
+# FreeBSD: Monitor Your Disks’ Health with Smartmontools
+https://davidandrzejewski.com/2009/03/15/freebsd-monitor-your-disks-health-with-smartmontools/
+DEVICESCAN -a -m email@address.com
+
+# Using portmaster to do a complete reinstallation of all ports:
+https://www.freebsd.org/cgi/man.cgi?query=portmaster&sektion=8&manpath=freebsd-release-ports
+       1. portmaster --list-origins	> ~/installed-port-list
+	   2. Update the ports tree
+	   3. portmaster -ty --clean-distfiles
+	   4. portmaster -Faf
+	   5. pkg delete -afy
+	   6. rm -rf /usr/local/lib/compat/pkg
+	   7. Back up any files	in /usr/local you wish to save,
+	      such as configuration files in /usr/local/etc
+	   8. Manually check /usr/local	and /var/db/pkg
+	      to make sure that	they are really	empty
+	   9. Install ports-mgmt/pkg and then ports-mgmt/portmaster.
+	      Remove both from ~/installed-port-list.
+	   10. portmaster --no-confirm `cat ~/installed-port-list`
+
+# Upgrading FreeBSD
+https://www.freebsd.org/releases/12.2R/installation.html#upgrade
+freebsd-update fetch
+freebsd-update install
+freebsd-update upgrade -r 12.2-RELEASE
+freebsd-update install
+shutdown -r now
+freebsd-update install
+<rebuild packages>
+freebsd-update install
+shutdown -r now
