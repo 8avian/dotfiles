@@ -1,0 +1,9 @@
+# Device	Mountpoint	FStype	Options	Dump	Pass#
+/dev/ada0p2	/		ufs	rw	1	1
+/dev/ada0p3	none		swap	sw	0	0
+/dev/ada1p1	/mnt/storage1	ufs	rw	2	2
+/dev/ada2p1	/mnt/storage2	ufs	rw	2	2
+/dev/ada3p1	/mnt/storage3	ufs	rw	2	2
+/dev/ada4p1	/mnt/storage4	ufs	rw	2	2
+/dev/ada5p1	/mnt/storage5	ufs	rw	2	2
+tmpfs		/tmp		tmpfs	rw,size=2147483648	0	0

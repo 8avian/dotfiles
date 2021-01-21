@@ -1,0 +1,1 @@
+../../share/git-core/contrib/completion/git-completion.bash
